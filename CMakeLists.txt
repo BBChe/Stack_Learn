@@ -3,4 +3,4 @@ project(Stack_Learn)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Stack_Learn main.cpp)
+add_executable(Stack_Learn main.cpp GxStack.h GxStack.cpp)

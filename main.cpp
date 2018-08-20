@@ -1,4 +1,5 @@
 #include <iostream>
+#include "GxStack.h"
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -87,8 +88,15 @@ int main() {
 //    cin>>str;
 //    Three_Problem(str);
 
-//lalalal
-
+//第五题共享栈调用
+    GxStack gstk;
+    InitGxStack(gstk);
+    GxPush(gstk,1,200);
+    cout<<gstk.data[19]<<endl;
+    GxPush(gstk,0,100);
+    cout<<gstk.data[0]<<endl;
+    cout<<GxPop(gstk,0)<<endl;
+    cout<<gstk.top[0]<<endl;
 
     return 0;
 }
